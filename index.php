@@ -10,17 +10,12 @@ $comando->execute();
 
 $generos = $comando->fetchALL(PDO::FETCH_ASSOC);
 
+$_title = 'Gêneros';
+
 ?>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <title>Biblioteca</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    </head>
-    <body>
-        <main class="container">
+<?php include('./includes/header.php') ?>
+
             <a class="btn btn-primary" href='insert.php'>Novo Gênero</a>
             <table class="table">
                 <tr>
@@ -39,10 +34,6 @@ $generos = $comando->fetchALL(PDO::FETCH_ASSOC);
                     </tr>
                 <?php endforeach ?>
             </table>
-         </main>
-    </body>
-</html>
 
-
-
-
+            
+<?php include('./includes/footer.php') ?>
