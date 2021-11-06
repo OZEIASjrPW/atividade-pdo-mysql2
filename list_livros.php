@@ -1,6 +1,6 @@
 <?php
 require_once './vendor/autoload.php';
-use ExemploPDOMySql\MySQLConnection;
+use AtividadePDOMySQL\MySQLConnection;
 
 $bd = new MySQLConnection();
 $comando = $bd->prepare('SELECT * FROM livros');

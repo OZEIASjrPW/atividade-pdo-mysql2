@@ -1,6 +1,6 @@
 <?php
 require_once './vendor/autoload.php';
-use ExemploPDOMySql\MySQLConnection; //PDO;
+use AtividadePDOMySQL\MySQLConnection; //PDO;
 
 $bd = new MySQLConnection();
 
